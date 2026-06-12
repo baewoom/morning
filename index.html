@@ -1,8 +1,36 @@
-<iframe 
-    src="https://www.youtube.com/embed/videoseries?list=PLqc29QMLLQBDHx2FXkbrtpf8mahgAF4S-&autoplay=1&mute=1" 
-    width="100%" 
-    height="560"
-    frameborder="0"
-    allow="autoplay; fullscreen"
-    referrerpolicy="strict-origin-when-cross-origin">
-</iframe>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최신 예배 영상</title>
+    <style>
+        /* 브라우저 기본 여백 완벽 제거 및 스크롤 차단 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+        /* 유튜브 플레이어를 절대 좌표로 화면에 꽉 채움 */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe 
+        src="https://www.youtube.com/embed/videoseries?list=PLqc29QMLLQBDHx2FXkbrtpf8mahgAF4S-&autoplay=1&mute=1" 
+        allow="autoplay; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="교회 최신 영상">
+    </iframe>
+</body>
+</html>
